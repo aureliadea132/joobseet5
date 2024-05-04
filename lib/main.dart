@@ -23,7 +23,7 @@ class MahasiswaList extends StatelessWidget {
       String nim = nimMahasiswa[index];
 
       Color backgroundColor =
-          i == nomorAbsen ? const Color.fromARGB(255, 64, 250, 70) : Color.fromARGB(255, 230, 224, 224); // Perbaiki disini, menggunakan 'i' bukan 'index'
+          i == nomorAbsen ? Color.fromARGB(255, 223, 119, 15) : Color.fromARGB(255, 240, 239, 237); // Perbaiki disini, menggunakan 'i' bukan 'index'
 
       mahasiswaWidgets.add(Container(
         color: backgroundColor,
@@ -55,8 +55,8 @@ class MyApp extends StatelessWidget {
           title: Text('Mahasiswa List'),
         ),
         body: MahasiswaList(
-          namaMahasiswa: ['ALief Wahyulianto', 'Aurelia Dhea Syafenia', 'Fadhil Al Fiqri', 'Moch.Nasrullah', 'Wilsya Nuralisa'],
-          nimMahasiswa: ['STI202102403', 'STI202102409', 'STI202102411', 'STI202102420', 'STI202102394'],
+          namaMahasiswa: ['Anugerah Bagus Pratama', 'Naufal Al Zarah Jahshy', 'Hanif Suranto', 'Linen Alif Nandanto', 'Laeli Nur Rohmah'],
+          nimMahasiswa: ['STI202102306', 'STI202102307', 'STI202102323', 'STI202102328', 'STI202102305'],
           nomorAbsen: 1,
         ),
       ),
